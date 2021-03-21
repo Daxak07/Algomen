@@ -17,6 +17,8 @@
 
 ## Algorithm
 
+
+
 **What is Dijkstra’s shortest path algorithm?**
 
 * Dijkstra algorithm is a greedy algorithm.
@@ -25,6 +27,19 @@
 * For a given source node in the graph, the algorithm finds the shortest path between source node and every other node.
 * This algorithm also used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
 * Dijkstra’s algorithm is very similar to Prim’s algorithm. In Prim’s algorithm we create minimum spanning tree (MST) and in Dijkstra algorithm we create shortest path tree (SPT) from the given source...
+
+**What is Bellman-Ford’s shortest path algorithm?**
+
+* THE BELLMAN-FORD ALGORITHM IS A GRAPH SEARCH ALGORITHM THAT FINDS THE SHORTEST PATH
+BETWEEN A GIVEN SOURCE VERTEX AND ALL OTHER VERTICES IN THE GRAPH. THIS ALGORITHM CAN BE
+USED ON BOTH WEIGHTED AND UNWEIGHTED GRAPHS.
+* LIKE DIJKSTRA'S SHORTEST PATH ALGORITHM, THE BELLMAN-FORD ALGORITHM IS GUARANTEED TO FIND
+THE SHORTEST PATH IN A GRAPH. THOUGH IT IS SLOWER THAN DIJKSTRA'S ALGORITHM, BELLMAN-FORD
+IS CAPABLE OF HANDLING GRAPHS THAT CONTAIN NEGATIVE EDGE WEIGHTS, SO IT IS MORE VERSATILE.
+* IT IS WORTH NOTING THAT IF THERE EXISTS A NEGATIVE CYCLE IN THE GRAPH, THEN THERE IS NO
+SHORTEST PATH. GOING AROUND THE NEGATIVE CYCLE AN INFINITE NUMBER OF TIMES WOULD CONTINUE
+TO DECREASE THE COST OF THE PATH (EVEN THOUGH THE PATH LENGTH IS INCREASING). BECAUSE OF
+THIS, BELLMAN-FORD CAN ALSO DETECT NEGATIVE CYCLES WHICH IS A USEFUL FEATURE.
 
 ## Shortest path Applications
 
