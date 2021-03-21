@@ -1,10 +1,10 @@
 # SHORTEST PATH by Algomen
 
-### REAL-LIFE GRAPHS  ###
+## REAL-LIFE GRAPHS  ##
 *GRAPH THEORY IS NOTHING BUT CONNECTED VERTICES (NODES)*
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png)
-**EVERYTHING IN OUR WORLD IS LINKED:**
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png =250x)
 </br>
+**EVERYTHING IN OUR WORLD IS LINKED:**
 * All cities are linked by roads
 * Pages are linked by hyperlinks on the internet
 * Flight and rail network
@@ -14,7 +14,7 @@
 
 *By graphs, we can simulate all these networks to make some visual analysis like finding connections and shortest paths between nodes.*
 
-### Algorithm ###
+## Algorithm ##
 
 **What is Dijkstra’s shortest path algorithm?**
 
@@ -25,35 +25,37 @@
 * This algorithm also used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
 * Dijkstra’s algorithm is very similar to Prim’s algorithm. In Prim’s algorithm we create minimum spanning tree (MST) and in Dijkstra algorithm we create shortest path tree (SPT) from the given source..
 
-### Shortest path Applications ###
+## Shortest path Applications ##
 
-**Games**
+#### Games ####
 </br>
 What about uses of the shortest path algorithms, the very first thing that came to our mind was the project we worked on in the java2 course. 
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/3edited.gif)
+</br>
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/3edited.gif =250x)
 
-**Map services**
+#### Map services ####
 </br>
 Shortest path algorithms are applied to automatically find directions between physical locations, such as driving directions on web mapping websites like MapQuest or Google Maps.
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/1fasted.gif)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/1fasted.gif =250x)
 
 *Analysis and results from gif:*
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/analysis.png)
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/result.png)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/analysis.png =250x)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/result.png =250x)
 
-**Nondeterministic machine**
+#### Nondeterministic machine ####
 </br>
 If one represents a nondeterministic abstract machine as a graph where vertices describe states and edges describe possible transitions, shortest path algorithms can be used to find an optimal sequence of choices to reach a certain goal state, or to establish lower bounds on the time needed to reach a given state.
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/nondeterministic.png)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/nondeterministic.png =250x)
 </br>
 *Real-life example:*
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/2fasted.gif)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/2fasted.gif =250x)
 
 ## Code implementation
 **Dijkstra's algorithm**
-```public class SPT {
+```
+public class SPT {
     static class Graph {
         int vertices;
         int matrix[][];
@@ -153,12 +155,13 @@ If one represents a nondeterministic abstract machine as a graph where vertices 
 }
 ```
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg =250x)
 </br>
 
 **BellmanFord Algorithm:**
 
-```class SPT2 {
+```
+class SPT2 {
     static void BellmanFord(int graph[][], int V, int E, int src) {
         int []dis = new int[V];
         for (int i = 0; i < V; i++) {
@@ -207,4 +210,5 @@ If one represents a nondeterministic abstract machine as a graph where vertices 
      
         BellmanFord(graph, V, E, 0);
     }
-}```
+}
+```
