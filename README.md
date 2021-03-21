@@ -1,6 +1,6 @@
 # SHORTEST PATH by Algomen
 
-## REAL-LIFE GRAPHS ##
+## REAL-LIFE GRAPHS
 *GRAPH THEORY IS NOTHING BUT CONNECTED VERTICES (NODES)*
 </br>
 <img src="https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png" width="500">
@@ -15,7 +15,7 @@
 
 *By graphs, we can simulate all these networks to make some visual analysis like finding connections and shortest paths between nodes.*
 
-## Algorithm ##
+## Algorithm
 
 **What is Dijkstra’s shortest path algorithm?**
 
@@ -26,7 +26,7 @@
 * This algorithm also used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
 * Dijkstra’s algorithm is very similar to Prim’s algorithm. In Prim’s algorithm we create minimum spanning tree (MST) and in Dijkstra algorithm we create shortest path tree (SPT) from the given source..
 
-## Shortest path Applications ##
+## Shortest path Applications
 
 ### Games 
 What about uses of the shortest path algorithms, the very first thing that came to our mind was the project we worked on in the java2 course. 
