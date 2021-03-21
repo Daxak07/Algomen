@@ -53,6 +53,8 @@ If one represents a nondeterministic abstract machine as a graph where vertices 
 </br>
 <img src="https://github.com/Daxak07/Algomen/blob/main/visuals/2fasted.gif" width="500">
 
+
+
 ## Code implementation
 **Dijkstra's algorithm**
 ```
@@ -156,7 +158,7 @@ public class SPT {
 }
 ```
 </br>
-<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg" width="500">
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/SPT.jpg" width="500">
 </br>
 
 **BellmanFord Algorithm:**
@@ -213,3 +215,6 @@ class SPT2 {
     }
 }
 ```
+</br>
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg" width="500">
+</br>
