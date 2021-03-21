@@ -1,10 +1,10 @@
 # SHORTEST PATH by Algomen
 
-## REAL-LIFE GRAPHS
+### REAL-LIFE GRAPHS  ###
 *GRAPH THEORY IS NOTHING BUT CONNECTED VERTICES (NODES)*
-
-## EVERYTHING IN OUR WORLD IS LINKED:
-
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png)
+**EVERYTHING IN OUR WORLD IS LINKED:**
+</br>
 * All cities are linked by roads
 * Pages are linked by hyperlinks on the internet
 * Flight and rail network
@@ -12,9 +12,9 @@
 * Components of Electric circuit
 * Components of computer chips and etc…
 
-**By graphs, we can simulate all these networks to make some visual analysis like finding connections and shortest paths between nodes.**
+*By graphs, we can simulate all these networks to make some visual analysis like finding connections and shortest paths between nodes.*
 
-## Algorithm
+### Algorithm ###
 
 **What is Dijkstra’s shortest path algorithm?**
 
@@ -25,25 +25,34 @@
 * This algorithm also used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
 * Dijkstra’s algorithm is very similar to Prim’s algorithm. In Prim’s algorithm we create minimum spanning tree (MST) and in Dijkstra algorithm we create shortest path tree (SPT) from the given source..
 
-## Shortest path Applications
+### Shortest path Applications ###
 
 **Games**
+</br>
 What about uses of the shortest path algorithms, the very first thing that came to our mind was the project we worked on in the java2 course. 
 ![](https://github.com/Daxak07/Algomen/blob/main/visuals/3edited.gif)
 
 **Map services**
+</br>
 Shortest path algorithms are applied to automatically find directions between physical locations, such as driving directions on web mapping websites like MapQuest or Google Maps.
+</br>
 ![](https://github.com/Daxak07/Algomen/blob/main/visuals/1fasted.gif)
 
 *Analysis and results from gif:*
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/analysis.png)
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/result.png)
 
 **Nondeterministic machine**
+</br>
 If one represents a nondeterministic abstract machine as a graph where vertices describe states and edges describe possible transitions, shortest path algorithms can be used to find an optimal sequence of choices to reach a certain goal state, or to establish lower bounds on the time needed to reach a given state.
-
+</br>
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/nondeterministic.png)
+</br>
 *Real-life example:*
 ![](https://github.com/Daxak07/Algomen/blob/main/visuals/2fasted.gif)
 
 ## Code implementation
+**Dijkstra's algorithm**
 ```public class SPT {
     static class Graph {
         int vertices;
@@ -143,3 +152,59 @@ If one represents a nondeterministic abstract machine as a graph where vertices 
     }
 }
 ```
+</br>
+![](https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg)
+</br>
+
+**BellmanFord Algorithm:**
+
+```class SPT2 {
+    static void BellmanFord(int graph[][], int V, int E, int src) {
+        int []dis = new int[V];
+        for (int i = 0; i < V; i++) {
+            dis[i] = Integer.MAX_VALUE;
+        }
+     
+        dis[src] = 0;
+     
+        for (int i = 0; i < V - 1; i++) 
+        {
+     
+            for (int j = 0; j < E; j++) 
+            {
+                if (dis[graph[j][0]] != Integer.MAX_VALUE && dis[graph[j][0]] + graph[j][2] <
+                                dis[graph[j][1]])
+                    dis[graph[j][1]] = 
+                    dis[graph[j][0]] + graph[j][2];
+            }
+        }
+     
+
+        for (int i = 0; i < E; i++) {
+            int x = graph[i][0];
+            int y = graph[i][1];
+            int weight = graph[i][2];
+            
+            if (dis[x] != Integer.MAX_VALUE &&
+                    dis[x] + weight < dis[y])
+                System.out.println("Graph contains negative"
+                        +" weight cycle");
+        }
+     
+        System.out.println("Vertex Distance from Source");
+        for (int i = 0; i < V; i++)
+            System.out.println(i + "\t\t" + dis[i]);
+    }
+     
+    public static void main(String[] args) {
+        int V = 5; // Number of vertices in graph
+        int E = 8; // Number of edges in graph
+
+        int graph[][] = { { 0, 1, -1 }, { 0, 2, 4 },
+                        { 1, 2, 3 }, { 1, 3, 2 }, 
+                        { 1, 4, 2 }, { 3, 2, 5 }, 
+                        { 3, 1, 1 }, { 4, 3, -3 } };
+     
+        BellmanFord(graph, V, E, 0);
+    }
+}```
