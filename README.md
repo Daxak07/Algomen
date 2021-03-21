@@ -2,7 +2,7 @@
 
 ## REAL-LIFE GRAPHS  ##
 *GRAPH THEORY IS NOTHING BUT CONNECTED VERTICES (NODES)*
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png" width="200">
 </br>
 **EVERYTHING IN OUR WORLD IS LINKED:**
 * All cities are linked by roads
@@ -31,26 +31,26 @@
 </br>
 What about uses of the shortest path algorithms, the very first thing that came to our mind was the project we worked on in the java2 course. 
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/3edited.gif =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/3edited.gif" width="200">
 
 #### Map services ####
 </br>
 Shortest path algorithms are applied to automatically find directions between physical locations, such as driving directions on web mapping websites like MapQuest or Google Maps.
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/1fasted.gif =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/1fasted.gif" width="200">
 
 *Analysis and results from gif:*
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/analysis.png =250x)
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/result.png =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/analysis.png" width="200">
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/result.png" width="200">
 
 #### Nondeterministic machine ####
 </br>
 If one represents a nondeterministic abstract machine as a graph where vertices describe states and edges describe possible transitions, shortest path algorithms can be used to find an optimal sequence of choices to reach a certain goal state, or to establish lower bounds on the time needed to reach a given state.
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/nondeterministic.png =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/nondeterministic.png" width="200">
 </br>
 *Real-life example:*
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/2fasted.gif =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/2fasted.gif" width="200">
 
 ## Code implementation
 **Dijkstra's algorithm**
@@ -155,7 +155,7 @@ public class SPT {
 }
 ```
 </br>
-![](https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg =250x)
+<img src="https://github.com/Daxak07/Algomen/blob/main/visuals/codeGraph.jpeg" width="200">
 </br>
 
 **BellmanFord Algorithm:**
