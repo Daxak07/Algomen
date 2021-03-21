@@ -24,7 +24,7 @@
 * This means it finds a shortest paths between nodes in a graph, which may represent, for example, road networks
 * For a given source node in the graph, the algorithm finds the shortest path between source node and every other node.
 * This algorithm also used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
-* Dijkstra’s algorithm is very similar to Prim’s algorithm. In Prim’s algorithm we create minimum spanning tree (MST) and in Dijkstra algorithm we create shortest path tree (SPT) from the given source..
+* Dijkstra’s algorithm is very similar to Prim’s algorithm. In Prim’s algorithm we create minimum spanning tree (MST) and in Dijkstra algorithm we create shortest path tree (SPT) from the given source...
 
 ## Shortest path Applications
 
