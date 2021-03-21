@@ -1,7 +1,7 @@
 # SHORTEST PATH by Algomen
 
 ## REAL-LIFE GRAPHS
-*GRAPH THEORY IS NOTHING BUT CONNECTED VERTICES (NODES)*
+*Graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of vertices (also called nodes or points) which are connected by edges.*
 </br>
 <img src="https://github.com/Daxak07/Algomen/blob/main/visuals/graph.png" width="500">
 </br>
