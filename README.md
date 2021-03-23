@@ -16,9 +16,6 @@
 *By graphs, we can simulate all these networks to make some visual analysis like finding connections and shortest paths between nodes.*
 
 ## Algorithm
-
-
-
 **What is Dijkstra’s shortest path algorithm?**
 
 * Dijkstra algorithm is a greedy algorithm.
